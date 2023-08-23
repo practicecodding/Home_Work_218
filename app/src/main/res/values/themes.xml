@@ -8,7 +8,7 @@
     <style name="Theme.Home_Work_2181" parent="Base.Theme.Home_Work_2181" />
 
     <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
-        <item name="colorControlActivated">#8300BCD4</item>
+        <item name="colorControlActivated">#673AB7</item>
     </style>
 
 </resources>
