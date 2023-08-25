@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 getAsset.setVisibility(View.GONE);
                 getLiabilities.setVisibility(View.VISIBLE);
                 toolbar.setText("Liabilities");
+                toolbar.startAnimation(toolbarAnimation);
 
                 String credit,due,tax;
                 credit = edCredit.getText().toString();
@@ -140,13 +141,6 @@ public class MainActivity extends AppCompatActivity {
 
             //next.setEnabled(gold.length() > 0 && silver.length() >0 && bank.length() >0 && hajj.length() >0 && out_of_loan.length() >0 && inbestments.length() >0);
 
-//            if (edGold.requestFocus() || edSilver.requestFocus() || edBank.requestFocus() || edHajj.requestFocus() || edOut_of_loan.requestFocus() || edInbestments.requestFocus()) {
-//
-//                asset.setTextColor(Color.parseColor("#673AB7"));
-//
-//            } else {
-//                asset.setTextColor(Color.parseColor("#555555"));
-//            }
 
         }
 
@@ -189,8 +183,13 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
 
+            if (back==0){
+                toolbar.startAnimation(toolbarAnimation);
+            }
             toolbar.setText("Asset");
             toolbar.setTextColor(Color.parseColor("#673AB7"));
+            back=3;
+
             return false;
         }
     };
@@ -203,16 +202,16 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
     @Override
     public void onBackPressed() {
 
         if (back==1){
-            back = 0;
+            back = 3;
             getAsset.setVisibility(View.VISIBLE);
             getLiabilities.setVisibility(View.GONE);
             toolbar.setText("Asset");
             toolbar.setTextColor(Color.parseColor("#673AB7"));
+            toolbar.startAnimation(toolbarAnimation);
         }else {
             super.onBackPressed();
         }
