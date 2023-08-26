@@ -409,6 +409,54 @@
             </LinearLayout>
             <!--Get Liabilities-->
 
+            <!--Get Result-->
+            <LinearLayout
+                android:id="@+id/getResult"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    app:cardElevation="10dp"
+                    android:outlineAmbientShadowColor="#673AB7"
+                    android:outlineSpotShadowColor="#673AB7"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="100dp"
+                        android:paddingBottom="100dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/custom_design"
+                        >
+                        <TextView
+                            android:id="@+id/tvResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Your Payable Zakat :"
+                            android:textColor="#88D68C"
+                            android:textSize="30sp"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <!--Get Result-->
+
         </LinearLayout>
 
     </ScrollView>
