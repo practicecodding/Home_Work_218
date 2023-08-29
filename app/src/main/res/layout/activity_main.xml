@@ -29,7 +29,6 @@
                 android:textColor="#3F51B5"
                 />
 
-
         </androidx.appcompat.widget.Toolbar>
 
 
@@ -448,7 +447,6 @@
                             android:textColor="#88D68C"
                             android:textSize="30sp"
                             />
-
 
                     </LinearLayout>
 
