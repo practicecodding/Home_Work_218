@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Home_Work_214.1"
+                android:text="Home_Work_218.2"
                 android:textSize="20sp"
                 android:textColor="@color/black"
                 android:textStyle="bold|italic"
@@ -46,16 +46,33 @@
         android:layout_marginRight="20dp"
         app:boxStrokeColor="#E91E63"
         app:hintTextColor="#E91E63"
-        android:textColorHint="#E91E63"
+        android:textColorHint="#80000000"
         app:endIconMode="clear_text"
         app:endIconTint="#E91E63"
-        android:hint="Test">
+        android:hint="Enter Your Income">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="9"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:textColor="@drawable/button_text_color"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="Show Yor Tax"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
 
 
 
