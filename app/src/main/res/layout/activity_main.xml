@@ -72,9 +72,9 @@
         android:textAllCaps="false"
         android:enabled="false"
         android:textSize="18sp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:textStyle="italic"/>
-
-
 
 
 

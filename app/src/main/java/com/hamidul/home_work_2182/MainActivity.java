@@ -3,6 +3,10 @@ package com.hamidul.home_work_2182;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -51,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 String s1 = editText.getText().toString();
                 button.setEnabled(!s1.isEmpty());
-                if (s1.length()==0){
-                    textToSpeech.stop();
-                }
+//                if (s1.length()==0){
+//                    textToSpeech.stop();
+//                }
                 if (i1<i2){
                     textToSpeech.stop();
                 }
@@ -117,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
         textToSpeech.stop();
         super.onPause();
     }
-
 
 
 }
